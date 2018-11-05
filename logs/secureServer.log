@@ -1,0 +1,40 @@
+2018-11-05 16:34:05.297  INFO 10774 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$21745d5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.0.RELEASE)
+
+2018-11-05 16:34:05.407  INFO 10774 --- [           main] c.p.s.SecureServerApplication            : No active profile set, falling back to default profiles: default
+2018-11-05 16:34:06.327  INFO 10774 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=cb09c1c2-7b8d-3b5a-ac0c-4bc81e41b3a0
+2018-11-05 16:34:06.371  INFO 10774 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$21745d5b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-11-05 16:34:06.816  INFO 10774 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9002 (http)
+2018-11-05 16:34:06.849  INFO 10774 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-11-05 16:34:06.849  INFO 10774 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-11-05 16:34:06.864  INFO 10774 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/723310/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-11-05 16:34:07.014  INFO 10774 --- [           main] o.a.c.c.C.[.[localhost].[/services]      : Initializing Spring embedded WebApplicationContext
+2018-11-05 16:34:07.014  INFO 10774 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1587 ms
+2018-11-05 16:34:07.600  INFO 10774 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-11-05 16:34:07.601  INFO 10774 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-11-05 16:34:07.601  INFO 10774 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-11-05 16:34:07.603  INFO 10774 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2018-11-05 16:34:07.603  INFO 10774 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-11-05 16:34:07.603  INFO 10774 --- [           main] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-11-05 16:34:07.604  INFO 10774 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-11-05 16:34:07.604  INFO 10774 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-11-05 16:34:08.052  INFO 10774 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2018-11-05 16:34:08.545  INFO 10774 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 1af19bb0-1e48-4365-bea3-2390211e6a0e
+
+2018-11-05 16:34:08.773  INFO 10774 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@181e731e, org.springframework.security.web.context.SecurityContextPersistenceFilter@60410cd, org.springframework.security.web.header.HeaderWriterFilter@51133c06, org.springframework.security.web.authentication.logout.LogoutFilter@31add175, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@69f1a286, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@95e33cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7393222f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35645047, org.springframework.security.web.session.SessionManagementFilter@4241e0f4, org.springframework.security.web.access.ExceptionTranslationFilter@7d9e8ef7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42530531]
+2018-11-05 16:34:08.807  INFO 10774 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-11-05 16:34:09.020  INFO 10774 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9002 (http) with context path '/services'
+2018-11-05 16:34:09.023  INFO 10774 --- [           main] c.p.s.SecureServerApplication            : Started SecureServerApplication in 4.564 seconds (JVM running for 5.092)
+2018-11-05 16:34:21.673  INFO 10774 --- [nio-9002-exec-2] o.a.c.c.C.[.[localhost].[/services]      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-11-05 16:34:21.673  INFO 10774 --- [nio-9002-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2018-11-05 16:34:21.679  INFO 10774 --- [nio-9002-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2018-11-05 16:36:13.752  INFO 10774 --- [       Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

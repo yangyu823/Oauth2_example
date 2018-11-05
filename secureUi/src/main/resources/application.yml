@@ -1,0 +1,22 @@
+security:
+  oauth2:
+    client:
+      clientId: bd1c0a783ccdd1c9b9e4
+      clientSecret: 1a9030fbca47a5b2c28e92f19050bb77824b5ad1
+      accessTokenUri: https://github.com/login/oauth/access_token
+      userAuthorizationUri: https://github.com/login/oauth/authorize
+      clientAuthenticationScheme: form
+    resource:
+      userInfoUri: https://api.github.com/user
+      preferTokenInfo: false
+
+#So as the exception reports, there are two beans of the same type.
+#Historically Spring would override one bean with the other.
+#That has long been an annoyance since you could get hard to find bugs
+#where a second bean with a completely different type,
+#but with the same bean ID would make your first bean vanish.
+#
+#Spring Boot 2 now disables that sort of bean overriding by default.
+#You can re-enable it by setting the following property in your application.yml:
+
+spring.main.allow-bean-definition-overriding: true
