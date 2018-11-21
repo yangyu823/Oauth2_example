@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Security Page</title>
@@ -7,6 +7,14 @@
 <body>
 <div>
     <h1> Security Page</h1>
+    <table>
+        <tr><th>Station Id</th><th>Plate</th><th>Timestamp</th></tr>
+        <tr th:each = "toll : ${tolls}">
+            <td th:text = "${toll.stationId}"></td>
+            <td th:text = "${toll.licensePlate}"></td>
+            <td th:text = "${toll.timestamp}"></td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>
